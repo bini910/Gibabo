@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eritrean Food Subscription</title>
+    <style>
+        /* CSS Styling - Modern Look with Yellow and Black */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #FFD700;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #about, #menu, #subscribe, #contact, #pricing, #offers {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 15px;
+            width: 80%;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        #menu ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        #menu ul li {
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        /* Food images with hover */
+        .food-item {
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .food-item img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .food-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .food-item p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        form input, form select {
+            margin-top: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            font-size: 1em;
+        }
+
+        form button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #FFD700;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        form button:hover {
+            background-color: #FFEB3B;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #FFD700;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Pricing Table with Hover */
+        .pricing-table {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .price-item {
+            background-color: #FFD700;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .price-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .price-item h3 {
+            margin: 10px 0;
+            font-size: 1.8em;
+        }
+
+        .price-item p {
+            font-size: 1.2em;
+        }
+
+        /* Offers Section */
+        .offer-item {
+            background-color: #333;
+            color: #FFD700;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .offer-item:hover {
+            background-color: #444;
+        }
+
+        .offer-item h4 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .offer-item p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ጊባቦ ኣብ ገዛ ዝተበሰለ መግቢ</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">ብዛዕባና</a></li>
+                <li><a href="#menu">ዝርዝር መግቢ</a></li>
+                <li><a href="#pricing">ዋጋታት</a></li>
+                <li><a href="#offers">ጊፍት</a></li>
+                <li><a href="#subscribe">ሳብስክራይብ</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>ብዛዕባና</h2>
+        <p>ካብ ክሽነና ብፍሩይ ዝተሰርሑ ሓቀኛታት ኤርትራውያንን ኢትዮጵያውያንን መግብታት ክሳብ ኣፍደገ ገዛኹም ነቕርብ።  ኣገልግሎት ምዝገባና ኣብ መላእ ቶሮንቶ ንዝርከቡ ንጽልን ስድራቤታትን ጥዑምን ኣብ ገዛ ዝተበሰለን መግቢ የምጽእ እዩ።  ባህላዊ መግብታት ከም ኢንጀራ,ዚግኒን ካልእን ኣስተማቕሩ።.</p>
+    </section>
+
+    <section id="menu">
+        <h2>ዝርዝር መግብታት</h2>
+        <div class="food-items">
+            <div class="food-item">
+                <img src="pictures/1200x1600-zigni-on-injera-side-view.jpg" alt="Injera with Zigni">
+                <p>እንጀራ ብዝግኒ</p>
+            </div>
+            <div class="food-item">
+                <img src="pictures/sddefault.jpg" alt="Shiro with Lentils">
+                <p>እንጀራ ብሽሮ</p>
+            </div>
+            <div class="food-item">
+                <img src="pictures/tsebhi-dorho-berbere.jpg" alt="Tsebhi with Rice">
+                <p>ፓስታ ብባኒ</p>
+            </div>
+            <div class="food-item">
+                <img src="pictures/Coconut-Rice-Bowl-12.jpg" alt="Vegetarian Combo">
+                <p>ኣሕምልቲ</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>ዋጋታት</h2>
+        <div class="pricing-table">
+            <div class="price-item">
+                <h3>ሰሙናዊ ፕላን</h3>
+                <p>5 መግቢ  $50</p>
+            </div>
+            <div class="price-item">
+                <h3>ክልተ ሰሙናዊ</h3>
+                <p>10 መግቢ $90</p>
+            </div>
+            <div class="price-item">
+                <h3>ወርሓዊ ፕላን</h3>
+                <p>20 መግቢ $170</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="offers">
+        <h2>Special Offers</h2>
+        <div class="offer-item">
+            <h4>10% Off First Order</h4>
+            <p>Use code: WELCOME10 on your first subscription for a discount!</p>
+        </div>
+        <div class="offer-item">
+            <h4>Refer a Friend</h4>
+            <p>Refer a friend and both of you get $5 off your next order.</p>
+        </div>
+    </section>
+
+    <section id="subscribe">
+        <h2>Subscribe to Our Service</h2>
+        <form id="subscription-form">
+            <label for="name">
